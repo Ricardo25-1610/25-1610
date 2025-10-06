@@ -181,3 +181,120 @@ p, ol li {
         gap: 8px;
     }
 }
+* Styling a Page Header */
+h1 {
+  color: red;           /* red as requested */
+  text-align: center;   /* centered */
+  font-family: Arial, sans-serif; /* Arial */
+}
+/* Creating a Highlight Class */
+.highlight {
+  font-weight: bold;          /* bold */
+  background: yellow;         /* yellow background */
+  font-size: 20px;            /* 20px size */
+  padding: 4px 6px;           /* slight padding for readability */
+  border-radius: 4px;         /* softer feel */
+}
+/* Box Model Practice */
+.post-card {
+  margin: 20px;                 /* outer space */
+  padding: 10px;                /* inner space */
+  border: 2px solid #000;       /* solid black border */
+  background: #fff;             /* clean canvas */
+  border-radius: 8px;           /* friendly look */
+}
+/* Responsive Design */
+@media (max-width: 600px) {
+  body {
+    background: lightblue;  /* requested behavior */
+  }
+}
+/* Background Image */
+.banner {
+  background-image: url('https://images.unsplash.com/photo-1417325384643-aac51acc9e5d?w=1600&auto=format&fit=crop&q=80'); /* placeholder path */
+  background-repeat: no-repeat;   /* do not repeat */
+  background-size: cover;         /* cover whole area */
+  background-position: center;    /* center focus */
+  min-height: 240px;              /* visible height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.35);
+}
+/* Transition Effect */
+.cta-share {
+  background: #1e90ff;                 /* blue base */
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.5s ease; /* smooth 0.5s */
+}
+.cta-share:hover {
+  background: #2ecc71;                 /* green on hover */
+}
+/* Absolute vs Relative Positioning */
+.relative-box {
+  position: relative;                /* creates positioning context */
+  height: 120px;
+  margin: 20px;
+  background: #f0f4ff;
+  border-radius: 8px;
+}
+
+.absolute-badge {
+  position: absolute;                /* positioned relative to .relative-box */
+  top: 8px;
+  right: 8px;
+  background: #ff7675;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.absolute-alone {
+  position: absolute;                /* positioned relative to the viewport */
+  top: 20px;                         /* will sit near the top-left of the page */
+  left: 20px;
+  background: #ffeaa7;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+html { font-size: 16px; }       /* baseline for rem */
+.unit-parent {
+  font-size: 20px;              /* parent font size to show em scaling */
+  margin: 20px 0;
+  background: #f9fbff;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+/* Using Different CSS Units */
+.px-size  { font-size: 16px; }  /* fixed, unaffected by parent */
+.em-size  { font-size: 1.25em; }/* scales with parent (20px * 1.25 = 25px) */
+.rem-size { font-size: 1.25rem; }/* scales with root (16px * 1.25 = 20px) */
+
+/* Grid or Flex Layout — using Flexbox */
+.two-col {
+  display: flex;
+  gap: 16px;
+  margin: 20px 0;
+}
+.feed { flex: 2; background: #ffffff; padding: 12px; border-radius: 8px; }
+.sidebar { flex: 1; background: #f2f6ff; padding: 12px; border-radius: 8px; }
+
+/* Stack columns on small screens */
+@media (max-width: 600px) {
+  .two-col { flex-direction: column; }
+}
+/* Color Formats */
+.rgb-text { color: rgb(255,0,0); }           /* red */
+.hex-text { color: #00ff00; }                /* green */
+.hsl-text { color: hsl(240, 100%, 50%); }    /* blue */
+
+
+
+
